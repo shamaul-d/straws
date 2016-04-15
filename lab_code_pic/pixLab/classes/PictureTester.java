@@ -9,6 +9,14 @@
 public class PictureTester
 {
   /** Method to test zeroBlue */
+
+    public static void testCopy() {
+	Picture beach = new Picture("beach.jpg");
+	Picture snowman = new Picture("snowman.jpg");
+	beach.copy(snowman, 50, 100, 40, 60, 80, 100);
+	beach.explore();
+    }
+    
   public static void testZeroBlue()
   {
     Picture beach = new Picture("beach.jpg");
@@ -88,6 +96,13 @@ public class PictureTester
     canvas.createCollage();
     canvas.explore();
   }
+
+     public static void testMyCollage()
+  {
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
@@ -104,23 +119,24 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
+    //testZeroBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    testGrayscale();
+    //testNegate();
+    //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
-    testMirrorVerticalRightToLeft();
-    testMirrorHorizontal();
-    testMirrorHorizontalBotToTop();
+    //testMirrorVertical();
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    //testCopy();
+      testMyCollage();
+      //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
